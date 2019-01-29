@@ -9,16 +9,19 @@
 - is a light-weight library, just [![](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/lozad?compression=gzip)](https://cdn.jsdelivr.net/npm/lozad) minified & gzipped,
 - has NO DEPENDENCIES :)
 - allows lazy loading of dynamically added elements as well,
-- supports responsive images and background images
+- supports &lt;img&gt;, &lt;picture&gt;, iframes, videos, audios, responsive images, background images etc.
+- is completely free and open source.
 
 It is written with an aim to lazy load images, iframes, ads, videos or any other element using the recently added [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) with tremendous performance benefits.
 
-##### Featured in:
+## Featured in:
+- [Web | Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
 - [Product Hunt](https://www.producthunt.com/posts/lozad-js)
 - [Reddit](https://www.reddit.com/r/webdev/comments/6zg1x0/highly_performant_light_05kb_and_configurable/)
 - [CSS Tricks](https://css-tricks.com/lozad-js-performant-lazy-loading-images)
 - [David Walsh](https://twitter.com/davidwalshblog/status/915319510646829061)
 - [Codrops](https://twitter.com/Apoorv_Saxena/status/906586828265758720)
+- [SitePoint](https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/)
 
 ## Table of Contents
 
@@ -44,10 +47,10 @@ Making this more efficient and performant is what [IntersectionObserver](https:/
 # You can install lozad with npm
 $ npm install --save lozad
 
-# Alternatively you can use Yarn.
+# Alternatively you can use Yarn
 $ yarn add lozad
 
-# Another option is to use Bower.
+# Another option is to use Bower
 $ bower install lozad
 ```
 
@@ -68,6 +71,12 @@ Or load via **CDN** and include in the `head` tag of your page.
 ```
 
 When loading from CDN, you can find the library on `window.lozad`.
+
+---
+
+<a href="https://www.patreon.com/apoorvsaxena">
+    <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
 ## Usage
 
@@ -180,8 +189,7 @@ Create _a broken_ picture element structure.
 </picture>
 ```
 
-When _lozad_ load this picture element, it will fix it.
-That's all ))
+When _lozad_ loads this picture element, it will fix it.
 
 ## Example with iframe
 
@@ -206,44 +214,6 @@ Available in [latest browsers](http://caniuse.com/#feat=intersectionobserver). I
 ## FAQs
 
 Checkout the [FAQ Wiki](https://github.com/ApoorvSaxena/lozad.js/wiki/Frequently-Asked-Questions) for some common gotchas to be aware of while using **lozad.js**
-
-## More than 3000 sites are using Lozad.js, here's few of them:
-
-* [gis.utah.gov](https://gis.utah.gov)
-* [Reitmans](https://www.reitmans.com/)
-* [Black Desert Online](https://www.blackdesertonline.com/)
-* [Barkers](https://www.barkersonline.co.nz/)
-* [Promoda](http://www.promoda.com.mx/)
-* [Dormy Golf & Fashion AB](https://www.dormy.se/)
-* [L'ovedbaby](https://www.lovedbaby.com/)
-* [LitNet](https://litnet.com/)
-* [CARD.com](https://www.card.com/)
-* [Wittchen](https://www.wittchen.com/)
-* [Fiege Group](https://www.fiege.com/)
-* [Kolgot](https://kolgot.net/)
-* [CYSM - Colombia y su Moda](https://cysm.com/)
-* [Siege Media](https://www.siegemedia.com/)
-* [Hi-Fi Class](https://www.hfc.com.pl/)
-* [StagonNews](http://www.stagonnews.gr/)
-* [Insurance Zebra](https://www.thezebra.com/)
-* [Summoners Inn](https://www.summoners-inn.de/de/start)
-* [Roots](https://roots.io/)
-* [Chrdk](https://chrdk.ru/)
-* [Giving Assistant](https://givingassistant.org/)
-* [Just A Pinch Recipe Club](https://www.justapinch.com/)
-* [am](https://www.am.com.mx/)
-* [Admiral Markets](https://admiralmarkets.com/)
-* [KickResume](https://www.kickresume.com/)
-* [Paper Tiger](https://www.papertiger.com/)
-* [Gmelius](https://gmelius.com/)
-* [Dormy](https://www.dormy.se/)
-* [Nabobil](https://nabobil.no/)
-* [Atbox](https://atbox.io/)
-* *[Add your site]* - See [Contributing section](./CONTRIBUTING.md)
-
-## Support Lozad.js
-
-Lozad.js is completely free and open-source. If you find it useful, you can show your support by starring it or sharing it in your social network or by simply letting me know how much you 💖 it by tweeting to [@Apoorv_Saxena](https://twitter.com/Apoorv_Saxena).
 
 ## Contribute
 
